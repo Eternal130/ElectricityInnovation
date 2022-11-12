@@ -1,0 +1,16 @@
+[
+{
+  "modid": "electricityinnovation",
+  "name": "Electricity Innovation",
+  "description": "Adding steelyard, ElectricOven and other electric machines.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Eternal130"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

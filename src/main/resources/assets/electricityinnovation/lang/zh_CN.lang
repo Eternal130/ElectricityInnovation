@@ -1,0 +1,10 @@
+item.steelyard.name=杆秤
+item.dish.name=秤盘
+item.hook.name=钩子
+item.weight.name=秤砣
+
+container.steelyard=杆秤
+
+gui.plans.dish=秤盘
+gui.plans.hook=钩子
+gui.plans.weight=秤砣
