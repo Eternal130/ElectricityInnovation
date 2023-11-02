@@ -1,0 +1,16 @@
+[
+{
+  "modid": "electricityinnovation",
+  "name": "ElectricityInnovation",
+  "description": "an addon for tfc plus to add useful tools and electricity blocks.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Eternal130"],
+  "credits": "Eternal130",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
