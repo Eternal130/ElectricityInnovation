@@ -18,6 +18,7 @@ public class messagepacket implements IMessage {
     public void toBytes(ByteBuf byteBuf) {
         byteBuf.writeFloat(weight);
     }
+    //下面方法不清楚为什么这样做
     public static class Handler implements IMessageHandler<messagepacket, IMessage>{
 
         @Override

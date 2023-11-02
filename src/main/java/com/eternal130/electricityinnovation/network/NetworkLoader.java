@@ -8,6 +8,7 @@ import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import cpw.mods.fml.relauncher.Side;
 
 public class NetworkLoader {
+    //这里信道名字不能过长,例如本mod的modid填进去会溢出,其他内容也不清楚为什么这样做
     public static SimpleNetworkWrapper instance = NetworkRegistry.INSTANCE.newSimpleChannel("EI");
 
     private static int nextID = 0;

@@ -21,13 +21,13 @@ public class CraftingLoader
     {
         registerRecipe();
     }
-
+    //注册工作台合成表
     private static void registerRecipe()
     {
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ItemLoader.steelyard, 1),
                 new Object[]{TFCItems.stick, "materialString",ItemLoader.dish,ItemLoader.hook,ItemLoader.weight}));
     }
-
+    //注册锻造合成表
     public static void registerAnvilRecipes() {
         Map map = AnvilManager.getInstance().getPlans();
         if (map.containsKey("dish"))

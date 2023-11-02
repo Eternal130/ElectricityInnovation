@@ -26,6 +26,7 @@ public class ItemSteelyard extends ItemTerra {
     {
         this.itemIcon = register.registerIcon(getIconString());
     }
+    //物品手持渲染是是否旋转180°,工具和武器要覆写此方法,但仅第一人称有效,其他视角需要覆写其他方法
     @Override
     public boolean shouldRotateAroundWhenRendering() { return true; }
     @Override
@@ -38,6 +39,7 @@ public class ItemSteelyard extends ItemTerra {
             nbt.setFloat("Weight", 10.0f);
         }
         itemStackIn.setTagCompound(nbt);
+        //在服务端时打开gui
         if (!worldIn.isRemote)
         {
             if (!playerIn.isSneaking())

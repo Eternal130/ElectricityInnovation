@@ -29,6 +29,7 @@ public class ElectricityInnovation
     public void preInit(FMLPreInitializationEvent event)
     {
         proxy.preInit(event);
+        //下面方法似乎可以修改,不过要等我搞清楚tfc+如何注册锻造合成表,之前写的方法能注册锻造合成表,但可能影响性能
         MinecraftForge.EVENT_BUS.register(new ChunkEventHandler());
     }
 

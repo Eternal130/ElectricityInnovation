@@ -13,15 +13,19 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event)
     {
+        //注册物品
         new ItemLoader(event);
 //        new BlockLoader(event);
+        //注册通讯,用于杆秤gui内改变重量时同步到服务端
         new NetworkLoader(event);
 //        new TileEntityLoader(event);
     }
 
     public void init(FMLInitializationEvent event)
     {
+        //注册gui
         new GuiHandler();
+        //注册合成表
         new CraftingLoader();
     }
 
