@@ -30,7 +30,10 @@ public class CraftingLoader
     //注册锻造合成表
     public static void registerAnvilRecipes() {
         Map map = AnvilManager.getInstance().getPlans();
-        if (map.containsKey("dish"))
+        if (map.containsKey("dish")
+            ||map.containsKey("hook")
+            ||map.containsKey("weight")
+            )
             return;
         if (AnvilManager.world == null)
             return;

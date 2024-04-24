@@ -8,7 +8,7 @@ buildscript {
         }
         maven {
             name = "gtnh"
-            url = "http://jenkins.usrv.eu:8081/nexus/content/groups/public/"
+            url = "https://nexus.gtnewhorizons.com/repository/public/"
         }
         maven {
             name = "sonatype"
@@ -52,6 +52,7 @@ dependencies {
     compile files('libs/CoFHCore-[1.7.10]3.1.4-329.jar')
     compile files('libs/NotEnoughItems-2.4.5-GTNH-dev.jar')
     compile files('libs/Waila-1.5.10_1.7.10.jar')
+    compile files('libs/Eln-1.22.0-5-gebdd340.dirty-dev.jar')
       
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
